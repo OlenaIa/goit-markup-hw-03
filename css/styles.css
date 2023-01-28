@@ -1,0 +1,206 @@
+/* основний колір текста #434455;*/
+/* колір текста другої частини лого хедера, навігація та заголовки #2E2F42; */
+/* колір текста героя  #FFFFFF; */
+/* колір першої частини текста лого і кнопки #4D5AE5 * /
+/* колір кнопки при hover та навігації при актів  #404BBF */
+/* колір другої частини лого футера #F4F4FD */
+/* колір текста футера #E7E9FC; */
+/* бекграунд головний  #FFFFFF */
+/* бекграунд другорядний #F4F4FD */
+/* бекграунд темних секцій #2E2F42 */
+
+:root {
+    --primary-text-color:#434455;
+    --title-text-color:#2E2F42;
+    --hero-text-color: #FFFFFF;
+    --footer-text-color: #E7E9FC;
+    --primary-backgraund-color: #FFFFFF;
+    --hero-footer-backgraund-color: #2E2F42;
+    --button-backgraund-color: #4D5AE5;
+    --activ-hover-color: #404BBF;
+    --secondary-backgraund-color: #F4F4FD;
+    --accent-color: #4D5AE5;
+    --logo-footer-second-part: #F4F4FD;
+    --hover-text-color-prtfl: #FFFFFF;
+    --main-text-font: 'Roboto', sans-serif;
+    --logo-text-font: 'Raleway', sans-serif;
+}
+
+body {
+    color: var(--primary-text-color);
+    background-color: var(--primary-backgraund-color);
+    font-family: var(--main-text-font);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+/* Зкинути крапки */
+.list {
+    list-style: none;
+}
+
+/*  Заголовки */
+.ttl {
+    color: var(--title-text-color);
+    text-transform: capitalize;
+}
+
+.hidden-ttl {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    }
+
+.hero-title {
+    text-align: center;
+    font-size: 56px;
+    line-height: 1.07;
+    text-transform: capitalize;
+}
+
+.small {
+    text-transform: none;
+}
+
+.values-title,
+.name.ttl,
+.card-ttl {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.services-title,
+.team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+}
+
+/* Логотип */
+.logo {
+    font-family: var(--logo-text-font);
+    font-size: 18px;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    text-transform:uppercase;
+}
+
+.accent {
+    color: var(--accent-color);
+}
+
+.header-logo {
+    line-height: 1.33;
+}
+
+.ftr-logo {
+    line-height: 1.17;
+    color: var(--logo-footer-second-part);
+}
+
+/* Навігація сайту */
+
+.header-nav a {
+    color: var(--title-text-color);
+    text-decoration: none;
+}
+
+.navigation {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.navigation:hover,
+.navigation:focus,
+.navigation.current {
+    color: var(--activ-hover-color);
+}
+
+/* Адреса */
+
+.addrss a {
+    color: var(--primary-text-color);
+    font-style: normal;
+    text-decoration: none;
+}
+
+.email:hover,
+.tel:hover,
+.email:focus,
+.tel:focus {
+    color: var(--activ-hover-color);
+}
+
+/* Стилізація героя */
+
+.hero {
+    color: var(--hero-text-color);
+    background-color: var(--hero-footer-backgraund-color);
+}
+
+/* Кнопка */
+.btn {
+    color: var(--hero-text-color);
+    background-color: var(--button-backgraund-color);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: inherit;
+    line-height: inherit;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+}
+.btn:hover,
+.btn:focus {
+    background-color: var(--activ-hover-color);
+}
+
+/* Картки команди з Головної */
+.team {
+    background-color: var(--secondary-backgraund-color);
+}
+
+.name.ttl,
+.team p {
+    text-align: center;
+}
+
+/* Стилізація футера */
+.ftr {
+    color: var(--footer-text-color);
+    background-color: var(--hero-footer-backgraund-color);
+}
+
+/* Портфоліо */
+
+.filter-btn {
+    color: var(--accent-color);
+    background-color: var(--secondary-backgraund-color);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: inherit;
+    line-height: inherit;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+    color: var(--hover-text-color-prtfl);
+    background-color: var(--activ-hover-color);
+}
+
+.card {
+    text-decoration: none;
+    color: var(--primary-text-color);
+}
