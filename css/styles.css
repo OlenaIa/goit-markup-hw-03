@@ -40,7 +40,18 @@ body {
     list-style: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
 /*  Заголовки */
+
 .ttl {
     color: var(--title-text-color);
     text-transform: capitalize;
@@ -61,7 +72,8 @@ body {
     }
 
 .hero-title {
-    text-align: center;
+    width: 494px;
+    margin-bottom: 48px;
     font-size: 56px;
     line-height: 1.07;
     text-transform: capitalize;
@@ -109,6 +121,15 @@ body {
     color: var(--logo-footer-second-part);
 }
 
+.container {
+    width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 2px solid tomato;
+}
+
 /* Навігація сайту */
 
 .header-nav a {
@@ -142,15 +163,20 @@ body {
     color: var(--activ-hover-color);
 }
 
-/* Стилізація героя */
+/* Герой */
 
 .hero {
+    text-align: center;
     color: var(--hero-text-color);
     background-color: var(--hero-footer-backgraund-color);
 }
 
 /* Кнопка */
 .btn {
+    width: 169px;
+    padding: 16px 32px;
+    border-radius: 4px;
+    border-color: transparent;
     color: var(--hero-text-color);
     background-color: var(--button-backgraund-color);
     font-family: inherit;
