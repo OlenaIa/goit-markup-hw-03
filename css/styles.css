@@ -153,8 +153,6 @@ img {
 }
 
 .header-page {
-    padding-top: 24px;
-    padding-bottom: 23px;
     border-bottom: 1px solid var(--footer-text-color);
 }
 
@@ -202,11 +200,18 @@ img {
     color: var(--activ-hover-color);
 }
 
-/* Герой */
+.header-cntnr a {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 23px;
+}
+
+/* ================ Герой ====================== */
 
 .hero {
     padding-top: 188px;
     padding-bottom: 188px;
+    text-align: center;
     color: var(--hero-text-color);
     background-color: var(--hero-footer-backgraund-color);
 }
@@ -232,6 +237,8 @@ img {
     padding: 16px 32px;
     border-radius: 4px;
     border: none;
+    margin-left: auto;
+    margin-right: auto;
 
     color: var(--hero-text-color);
     background-color: var(--button-backgraund-color);
@@ -297,10 +304,12 @@ img {
     text-align: center;
 }
 
-.card-content {
+.team-content {
     background-color: var(--primary-backgraund-color);
     padding-bottom: 32px;
     padding-top: 32px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
 }
 
 /* ==================== Стилізація футера =========== */
@@ -371,7 +380,9 @@ img {
 
 .card-content {
     padding-top: 32px;
-    padding-bottom: 32px;
+    padding-bottom: 31px;
     padding-left: 16px;
-    border: 1px solid var(--footer-text-color);
+    border-bottom: 1px solid var(--footer-text-color);
+    border-left: 1px solid var(--footer-text-color);
+    border-right: 1px solid var(--footer-text-color);
 }
